@@ -1,86 +1,73 @@
-/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    font-size: 20px;
+    /* background-color: #eee; */
 }
 
-nav {
-    background-color: #333;
-    padding: 10px;
-}
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 25px;
-    display: flex;
-}
-
-nav a {
-    color: #fff;
+button {
     text-decoration: none;
-    padding: 10px 20px;
-}
-nav a:hover {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #00ce9f;
+    border-radius:  15px;
+    width: 100px;
+    text-align: center;
+    color: #006400;
+    font-size: large;
+    text-transform: capitalize;
     cursor: pointer;
-    color: #00ce9f;
-    text-decoration: none;
-    padding: 10px 20px;
+}
+
+button:hover {
+    border: 3px;
+    background-color: #00ce9f;
+    color: white;
 }
 
 
-nav li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.leave-requests {
+/* User Attendance  */
+.leave {
+    /* background-color: #ddd; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    width: 100%;
+    justify-content: center;
+    margin: 15px;
+    margin-top: 0;
+    padding-bottom: 20px;
 }
 
-.leave-requests div
-{
-    width: 100%;
-}
-
-
-.leave-requests h1 {
-    padding: 20px;
-    font-size: 36px;
-    color: #fff;
-    width: 100%;
+.leave h1 {
+    color: white;
     background-color: #333;
-    margin-bottom: 50px;
+    border-bottom: 5px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
-.leave-requests .requests 
+
+.leave .lv
 {
-    align-items: center;
-    text-align: center;
-    padding: 0 20%;
+    margin-bottom: 100px;
 }
 
-table {
-    text-align: center;
-    width:750px;
+.leave .lv table {
+    margin: 5px auto;
+    width: 90%;
     border-collapse: collapse;
-    margin: 50px;
+    text-align: center;
 }
 
-th,
+.leave .lv th,
 td {
-    border: 1px solid #333;
-    padding: 8px;
-    text-align: left;
+    border: 2px solid silver;
+    padding: 10px;
+    text-transform: capitalize;
 }
 
 th {
@@ -88,35 +75,50 @@ th {
     font-size: 20px;
 }
 
-td {
-    font-size: 18px;
-}
+/* for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
-input[type="button"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 767px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .leave-requests {
-        width: 90%;
+    .leave {
+        padding-bottom: 150px;
+        margin: 0;
     }
 
     table {
         width: 100%;
     }
+    .leave h1 {
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+/* for mobile phones */
+@media only screen and (max-width: 767px) {
+
+    .leave {
+        margin: 0;
+        margin-bottom: 15px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .leave .lv {
+        padding: 50px;
+        margin-bottom: 20px auto;
+    }
+
+    .leave h1 {
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+
+
 }

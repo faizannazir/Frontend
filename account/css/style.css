@@ -6,8 +6,7 @@ body {
     background-attachment:  fixed; */
     background-color: #eee;
     color: #006400;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
 }
 a{
     text-decoration: none;

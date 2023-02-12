@@ -5,65 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today Attendance</title>
+    <title>Leaves</title>
 
     <link rel="stylesheet" href="css/leaverecord.css">
 </head>
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a> </li>
-            <li><a href="attendance.html">Attendance</a> </li>
-            <li><a href="#">Leave Requests</a> </li>
-            <li><a href="users.html">Users</a></li>
-        </ul>
-    </nav>
-    
-    <div class="leave-requests">
-        <div>
-            <h1>Leave Requests</h1>
-        </div>
-    
-        <div class="requests">
+
+    <div class="leave">
+
+    <div>
+        <h1>Leaves Requests</h1>
+    </div>
+
+        <div class="lv">
             <table>
                 <tr>
                     <th>ID</th>
-                    <th>Employee Name</th>
-                    <th>Leave Date</th>
-                    <th>Reason</th>
-                    <th>Accept</th>
-                    <th>Reject</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th colspan="2">Reason</th>             
+                    <th colspan="2">Accept/Decline</th>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>{{ employee-name }}</td>
-                    <td>05/02/2023</td>
-                    <td>Sick Leave</td>
-                    <td><input type="button" value="Accept"></td>
-                    <td><input type="button" value="Reject"></td>
+                    <td>Sharyar Khan</td>
+                    <td>02/02/2023</td>
+                    <td colspan="2"> Sick leave</td>
+                    <td><button type="submit">Accept</button></td>
+                    <td><button type="submit">Decline</button></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>{{ employee-name }}</td>
-                    <td>10/02/2023</td>
-                    <td>Family Emergency</td>
-                    <td><input type="button" value="Accept"></td>
-                    <td><input type="button" value="Reject"></td>
+                    <td>Faizan Nazir</td>
+                    <td>02/02/2023</td>
+                    <td colspan="2">Urgent Work</td>
+                    <td><button type="submit">Accept</button></td>
+                    <td><button type="submit">Decline</button></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>{{ employee-name }}</td>
-                    <td>15/02/2023</td>
-                    <td>Vacation</td>
-                    <td><input type="button" value="Accept"></td>
-                    <td><input type="button" value="Reject"></td>
+                    <td>Bilal Raza</td>
+                    <td>02/02/2023</td>
+                    <td colspan="2">Emergency</td>
+                    <td><button type="submit">Accept</button></td>
+                    <td><button type="submit">Decline</button></td>
                 </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ameer Hamza</td>
+                    <td>02/02/2023</td>
+                    <td colspan="2"> Car Problems</td>
+                    <td><button type="submit">Accept</button></td>
+                    <td><button type="submit">Decline</button></td>
+                </tr> 
             </table>
         </div>
     </div>
-
 </body>
 
 </html>

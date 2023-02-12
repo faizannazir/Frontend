@@ -6,7 +6,7 @@
 
 body {
     font-size: 20px;
-    /* background-color: #eee; */
+    background-color: #eee;
 }
 
 /*  Nav bar  */
@@ -21,7 +21,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 nav ul li a {
@@ -35,7 +35,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00ce9f;
+    background-color: #00ce9f;
+    color: white;
+    border: 2px solid #aeee;
 }
 /*  */
 
@@ -46,16 +48,15 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     background-color: #ddd;
+
 }
 
 .container h1 {
     margin: 20px;
-    margin-top: 0;
     width: 100%;
     background-color: #333;
     color: white;
     padding: 20px;
-    border-bottom: 5px solid gray;
 }
 
 .container form
