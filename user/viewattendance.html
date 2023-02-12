@@ -23,11 +23,7 @@
 
 
     <div class="user-attendance">
-
-    <div>
-        <h1>{{ User }} Attendance</h1>
-    </div>
-    <div class="filter">
+    <!-- <div class="filter">
         <form action="" method="post">
             <div class="labels">
             <label for="start-date">From:</label>
@@ -40,6 +36,27 @@
                 <input type="submit" value="Apply Filter" id="filter-btn">
             </div>
         </form>
+    </div> -->
+    <div class="container">
+<h1>{{ User }} Attendance</h1>
+        <form action="" method="post">
+            <div class="form-items">
+                <label for="start-date">From:</label> <br>
+               <input type="date" name="date" id="date" required>
+            </div>
+            <br>
+            <div class="form-items">
+                <label for="end-date">To:</label> <br>
+                <input type="date" name="end-date" id="end-date" required>
+            </div>
+            <br>
+            <div class="form-items">
+                <input type="submit" value="Apply Filter" id="filter-btn">
+            </div>
+            <br>
+             <div id="error"></div> 
+        </form>
+      
     </div>
     <span id="error"></span>
     <br>

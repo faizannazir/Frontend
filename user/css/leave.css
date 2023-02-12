@@ -21,7 +21,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 nav ul li a {
@@ -53,6 +53,7 @@ nav ul li a:hover {
 
 .container h1 {
     margin: 20px;
+    margin-top: 0px;
     width: 100%;
     background-color: #333;
     color: white;
@@ -65,7 +66,7 @@ nav ul li a:hover {
     background-color: #f2f2f2;
     padding: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -129,7 +130,6 @@ input[type="submit"]:hover {
     .container form
     {
         flex-direction: column;
-        gap: 0px;
     }
 
     textarea

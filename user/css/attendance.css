@@ -39,44 +39,54 @@ nav ul li a:hover {
 /*  */
 
 /* User Attendance  */
-.user-attendance {
-
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin:  15px;
-    padding-bottom: 20px;
+    align-items: center;
+    background-color: #ddd;
+
 }
 
-.user-attendance h1 {
-    color: white;
+.container h1 {
+    margin: 20px;
+    margin-top: 0px;
+    width: 100%;
     background-color: #333;
-    border-bottom: 5px solid gray;
+    color: white;
     padding: 20px;
-    margin-bottom: 20px;
 }
 
-
-.user-attendance .filter form .input,
-.user-attendance .filter form .labels {
+.container form
+{
+    width: 80%;
+    background-color: #f2f2f2;
+    padding: 70px;
     display: flex;
     justify-content: space-around;
-    margin-top: 5px;
-    text-transform: capitalize;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container form .form-items {
+    text-align: center;
+    padding: 5px 0;
 }
 
-.user-attendance .filter form .input input[type="date"] {
+.container form input {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #00ce9f;
+    border: 2px solid #00ce9f;
     font-size: 16px;
-    width: 200px;
-    margin-bottom: 20px;
-    text-align: center;
+    width: 300px;
     outline: none;
+    height: 50px;
 }
 
-.user-attendance .filter form .input input[type="submit"] {
+input[type=date] {
+    text-align: center;
+}
+
+input[type="submit"] {
+
     border: 1px solid #00ce9f;
     text-align: center;
     color: #006400;
@@ -84,17 +94,17 @@ nav ul li a:hover {
     width: 150px;
     padding: 10px;
     background-color: white;
-    border-radius: 5px;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
-.user-attendance .filter form .input input[type="submit"]:hover {
+input[type="submit"]:hover {
 
     background-color: #00ce9f;
     color: white;
 }
+
 
 
 .user-attendance .attendance table {
@@ -137,6 +147,10 @@ th {
         width: 100%;
 
     }
+    .container form
+    {
+        flex-direction: column;
+    }
 
 }
 
@@ -175,6 +189,10 @@ th {
     {
         width: 100%;
         margin: 0 auto;
+    }
+    .container form
+    {
+        flex-direction: column;
     }
 
 }
