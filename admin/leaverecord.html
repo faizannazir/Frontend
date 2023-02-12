@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Attendance</title>
+
+    <link rel="stylesheet" href="css/leaverecord.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="attendance.html">Attendance</a> </li>
+            <li><a href="#">Leave Requests</a> </li>
+            <li><a href="users.html">Users</a></li>
+        </ul>
+    </nav>
+    
+    <div class="leave-requests">
+        <div>
+            <h1>Leave Requests</h1>
+        </div>
+    
+        <div class="requests">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Employee Name</th>
+                    <th>Leave Date</th>
+                    <th>Reason</th>
+                    <th>Accept</th>
+                    <th>Reject</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>{{ employee-name }}</td>
+                    <td>05/02/2023</td>
+                    <td>Sick Leave</td>
+                    <td><input type="button" value="Accept"></td>
+                    <td><input type="button" value="Reject"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>{{ employee-name }}</td>
+                    <td>10/02/2023</td>
+                    <td>Family Emergency</td>
+                    <td><input type="button" value="Accept"></td>
+                    <td><input type="button" value="Reject"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>{{ employee-name }}</td>
+                    <td>15/02/2023</td>
+                    <td>Vacation</td>
+                    <td><input type="button" value="Accept"></td>
+                    <td><input type="button" value="Reject"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

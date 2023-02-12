@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="viewattendance.html">View Attendance</a> </li>
+            <li><a href="applyleave.html">Apply Leave</a> </li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="user">
+            <h1>{{ user-name }} Accounts</h1>
+        </div>
+        <div class="user-info">
+            <table>
+                <tr>
+                    <th colspan="4">User Information</th>
+                    <th rowspan="4" id="img-th"><img src="user-profile.png" alt="User Image" id="user-img"></th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td>{{ user-name }}</td>
+                    <th>Date OF BIRTH</th>
+                    <td>{user-department}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{ user-email }}</td>
+                    <th>Contact No</th>
+                    <td>{{ user-number }}</td>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <td>{{ user-id }}</td>
+                    <th>Department</th>
+                    <td>{{ user-department }}</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="user-attendance">
+        <div class="heading">
+            <h1>Attendance</h1>
+        </div>
+        <div class="attendance">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Entrance Time</th>
+                    <th>Exit Time</th>
+                    <th>Total Time</th>
+                    <th>Attendance</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>{{ user-name }}</td>
+                    <td>02/02/2023</td>
+                    <td>9:00 AM</td>
+                    <td>5:00 PM</td>
+                    <td>8 hours</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>{{ user-name }}</td>
+                    <td>03/02/2023</td>
+                    <td>9:15 AM</td>
+                    <td>4:30 PM</td>
+                    <td>7 hours 15 minutes</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>{{ user-name }}</td>
+                    <td>04/02/2023</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Absent</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>{{ user-name }}</td>
+                    <td>05/02/2023</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Leave</td>
+                </tr>
+            </table>
+        </div>
+        <div class="link">
+            <a id="attendance-detail" href="viewattendance.html">View-more</a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

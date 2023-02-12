@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Attendance</title>
+    <link rel="stylesheet" href="css/attendance.css">
+</head>
+
+<body>        
+    <div class="filter-container">
+        <h1><b>Check Attendance</b></h1>
+        <form action="" method="post">
+            <div class="form-items">
+                <label for="id">Employee ID:</label> <br>
+                <input type="number" name="id" id="id" placeholder="employee id">
+            </div>
+            <br>
+            <div class="form-items">
+                <label for="from">from</label> <br>
+                <input type="date" name="from" id="from" required>
+            </div>
+            <br>
+            <div class="form-items">
+                <label for="to">To</label> <br>
+                <input type="date" name="to" id="to" required>
+            </div>
+            <br>
+            <div class="form-items">
+                <input type="submit" value="Apply">
+            </div>
+            <br>
+             <div id="error"></div> 
+        </form>
+      
+    </div>
+
+
+
+    <div class="container">
+        <div class="attendance">
+            <h1>Attendance Record</h1>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Entrance Time</th>
+                    <th>Exit Time</th>
+                    <th>Total Time</th>
+                    <th>Attendance</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Faizan Nazir</td>
+                    <td>02/02/2023</td>
+                    <td>9:00 AM</td>
+                    <td>5:00 PM</td>
+                    <td>8 hours</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sharyar Khan</td>
+                    <td>02/02/2023</td>
+                    <td>9:00 AM</td>
+                    <td>5:00 PM</td>
+                    <td>8 hours</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bilal Raza</td>
+                    <td>02/02/2023</td>
+                    <td>9:00 AM</td>
+                    <td>5:00 PM</td>
+                    <td>8 hours</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ameer Hamza</td>
+                    <td>02/02/2023</td>
+                    <td>9:00 AM</td>
+                    <td>5:00 PM</td>
+                    <td>8 hours</td>
+                    <td>Present</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/attendance.js"></script>
+</body>
+
+</html>

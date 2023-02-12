@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Signup</title>
+    <!-- Meta tags for ux and seo  -->
+    <meta name="title" content="Signup">
+    <meta name="description" content="user Sign up page ">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon and css link -->
+    <link rel="shortcut icon" href="http://bims01.nayatel.net:8888/public/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="" method="post">
+            <div>
+                <img src="http://bims01.nayatel.net:8888/public/logo.png" alt="BimsLogo" width="180px">
+            </div>
+            <div>
+                <br>
+                <label for="user_first_name">First Name</label> <br>
+                <input type="text" id="user_first_name" name="user_first_name"  minlength="3" maxlength="12"
+                    autofocus autocomplete="false"><br> <output id="FERROR"></output>
+            </div>
+            <div>
+                <label for="user_last_name">Last Name</label> <br>
+                <input type="text" id="user_last_name" name="user_last_name"  minlength="3" maxlength="12">  <br>
+                <output id="LERROR"></output>
+               
+            </div>
+            <div>
+                <label for="user_email">Email</label> <br>
+                <input type="email" id="user_email" name="user_email"  minlength="8"><br>
+                <output id="EMAILERROR"></output> 
+            </div>
+            <div>
+                <label for="user_pass">Password</label> <br>
+                <input type="password" id="user_pass" name="user_pass"  minlength="8"><br>
+                <output id="PASSERROR"></output> 
+            </div>
+            <div>
+                <label for="user_con_pass">Confirm Password</label> <br>
+                <input type="password" id="user_con_pass" name="user_con_pass"  minlength="8"><br>
+                <output id="CPASSERROR"></output>
+                
+                <input type="checkbox" id="show"> Show Password<br>
+            </div>
+            <div>
+                <input type="submit" value="Sign Up">
+                <br>
+            </div>
+
+        </form>
+        <h3>Have an account</h3>
+        <a href="signin.html"> <button>Sign in</button></a>
+    </div>
+    <!-- Java Script -->
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

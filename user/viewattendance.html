@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+
+    <link rel="stylesheet" href="css/attendance.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="#">View Attendance</a> </li>
+            <li><a href="applyleave.html">Apply Leave</a> </li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="user-attendance">
+
+    <div>
+        <h1>{{ User }} Attendance</h1>
+    </div>
+    <div class="filter">
+        <form action="" method="post">
+            <div class="labels">
+            <label for="start-date">From:</label>
+            <label for="end-date">To:</label>
+            <label></label>   
+            </div>
+            <div class="input">
+                <input type="date" name="start-date" id="start-date" required>
+                <input type="date" name="end-date" id="end-date" required>
+                <input type="submit" value="Apply Filter" id="filter-btn">
+            </div>
+        </form>
+    </div>
+    <span id="error"></span>
+    <br>
+        <div class="attendance">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Entrance Time</th>
+                    <th>Exit Time</th>
+                    <th>Total Time</th>
+                    <th>Attendance</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>{{ user-name }}</td>
+                    <td>02/02/2023</td>
+                    <td>9:00 AM</td>
+                    <td>5:00 PM</td>
+                    <td>8 hours</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>{{ user-name }}</td>
+                    <td>03/02/2023</td>
+                    <td>9:15 AM</td>
+                    <td>4:30 PM</td>
+                    <td>7 hours 15 minutes</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>{{ user-name }}</td>
+                    <td>04/02/2023</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Absent</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>{{ user-name }}</td>
+                    <td>05/02/2023</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Leave</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/attendance.js"></script>
+</body>
+
+</html>

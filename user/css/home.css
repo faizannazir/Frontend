@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+
+}
+
+/*  Nav bar  */
+nav {
+    background-color: #333;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+nav ul li a:hover {
+    color: #00ce9f;
+}
+/*  */
+
+/* User information  */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* border: 5px solid gray; */
+    /* background-color: #eee; */
+}
+
+.container h1 {
+    background-color: #333;
+    color: white;
+    border-bottom: 5px solid gray;
+    padding: 20px;
+    margin: 0;
+
+}
+
+.container .user-info {
+    padding: 20px;
+    text-align: center;
+}
+.container .user-info table {
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+.container .user-info th,
+td {
+    border: 2px solid silver;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
+.container #img-th {
+    width: 20%;
+}
+
+.container #img-th #user-img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/* User Attendance  */
+.user-attendance {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #eee; */
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.user-attendance h1 {
+    background-color: #333;
+    color: white;
+    border-bottom: 5px solid gray;
+    vertical-align:middle;
+    padding: 15px;
+    margin: 0;
+}
+.user-attendance .attendance
+{
+ margin: 30px;
+}
+.user-attendance .attendance table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-attendance .attendance th,
+td {
+    text-align: center;
+    border: 2px solid silver;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.user-attendance .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-attendance .link a {
+    text-decoration: none;
+    margin: 30px;
+    padding: 10px;
+    border: 2px solid #00ce9f;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    font-size: x-large;
+    color: #006400;
+    text-transform: uppercase;
+}
+
+.user-attendance .link a:hover {
+    background-color: #00ce9f;
+    color: white;
+}
+
+
+/* for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   
+    nav ul
+    {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+   
+    nav ul li
+    {
+        margin: 10px;
+    }
+    
+    .container {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .user {
+        width: 100%;
+    }
+
+    #user-img {
+        width: 70%;
+        height: auto;
+        border-radius: 50%;
+    }
+    .user-attendance
+    {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* for mobile phones */
+ @media only screen and (max-width: 767px) {
+
+   
+    nav,.container,.user-attendance
+    {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    
+ 
+    nav ul
+    {
+        border-bottom: 5px solid gray;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav ul li
+    {
+        margin: 10px;
+    }
+
+    nav ul li a
+    {
+        padding: 5px;
+    }
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .user-info {
+        margin: 0;
+        padding: 5px;
+    }
+
+    table {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #img-th
+    {
+        padding: 0 2px;
+        border: none;
+    }
+    #user-img {
+        height: auto;
+        border-radius: 50%;
+    }
+}

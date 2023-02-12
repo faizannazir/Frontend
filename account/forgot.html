@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forgot Password</title>
+    <!-- Meta tags for ux and seo  -->
+    <meta name="title" content="Forgot Password">
+    <meta name="description" content="user forgot password page ">
+    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph Protocol for social media campaign -->
+    <meta propety="og:title" content=" User-Login ">
+    <meta propety="og:type" content="website">
+    <meta propety="og:image" content="logo.png"> <!-- Preview Image -->
+    <meta propety="og:url" content="https://www.example.com">
+
+    <!-- Optional OG Protocols -->
+    <meta property="og:description"
+        content="Attendance Managment System is design to use camera to capture in frame pictures and detect user and mark attendance ">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:site_name" content="Attendance Managment System">
+
+    <!-- favicon and css link -->
+    <link rel="shortcut icon" href="http://bims01.nayatel.net:8888/public/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Forgot Password</h1>
+        <form action="" method="post">
+            <div>
+                <img src="http://bims01.nayatel.net:8888/public/logo.png" alt="BimsLogo" width="180px">
+            </div>
+            <div>
+                <h3>Enter your email to reset your password</h3>
+            </div>
+            <div>
+                <label for="user_email">Email</label><br>
+                <input type="email" id="user_email" required minlength="3" autofocus placeholder="Email"> <br> <output id="email-error"></output>
+            </div>
+            <div>
+                <input type="submit" id="forgot" value="Forgot Password">
+            </div> 
+             <br>
+        </form>
+
+        <div>
+            <h3> Back To Sign in</h3>
+            <a href="signin.html" type="button"><input type="submit" value="Sign in"></a>
+        </div>
+
+    </div>
+    <!-- Java Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.forms[0];
+            form.addEventListener('submit', (event) => {
+                event.preventDefault(); // stop the form from submitting
+
+                if ((!email.value.trim().match(/^[a-z A-z]+[a-z0-9._%+-]{1,}@[a-z0-9.-]{2,}\.[a-z]{2,}$/))) {
+                    email.focus();
+                    email.classList.add('error');
+                    EMAILERROR.innerHTML = "Please enter valid Email address";
+                    EMAILERROR.style.color = "red";
+                    return;
+                }
+                email.classList.remove('error');
+                EMAILERROR.innerHTML = "";
+                form.submit();
+            });
+        });
+    </script>
+</body>
+
+</html>

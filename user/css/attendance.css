@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+/*  Nav bar  */
+nav {
+    background-color: #333;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+nav ul li a:hover {
+    color: #00ce9f;
+}
+/*  */
+
+/* User Attendance  */
+.user-attendance {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:  15px;
+    padding-bottom: 20px;
+}
+
+.user-attendance h1 {
+    color: white;
+    background-color: #333;
+    border-bottom: 5px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.user-attendance .filter form .input,
+.user-attendance .filter form .labels {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.user-attendance .filter form .input input[type="date"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ce9f;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.user-attendance .filter form .input input[type="submit"] {
+    border: 1px solid #00ce9f;
+    text-align: center;
+    color: #006400;
+    text-transform: uppercase;
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.user-attendance .filter form .input input[type="submit"]:hover {
+
+    background-color: #00ce9f;
+    color: white;
+}
+
+
+.user-attendance .attendance table {
+    margin: 5px auto;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.user-attendance .attendance th,
+td {
+    border: 2px solid silver;
+    padding: 10px;
+    text-transform: capitalize;
+}
+th {
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
+
+
+/* for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    nav ul
+    {
+        gap: 30px;
+    }
+    nav ul li
+    {
+        margin: 10px;
+    }
+    .user-attendance
+    {
+        padding: 0;
+        margin: 0;
+    }
+    table
+    {
+        width: 100%;
+
+    }
+
+}
+
+/* for mobile phones */
+ @media only screen and (max-width: 767px) {
+       
+    nav,.user-attendance
+    {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        width: 100%;
+    }
+
+     nav ul
+    {
+        border-bottom: 5px solid gray;
+        flex-wrap: wrap;
+    }
+    nav ul li
+    {
+        margin: 10px;
+    }
+
+    nav ul li a
+    {
+        padding: 5px;
+    }
+
+    .user-attendance h1 
+    {
+        text-align: center;
+    }
+
+    table 
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,122 @@
+/* CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    cursor: pointer;
+    color: #00ce9f;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.leave-requests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.leave-requests div
+{
+    width: 100%;
+}
+
+
+.leave-requests h1 {
+    padding: 20px;
+    font-size: 36px;
+    color: #fff;
+    width: 100%;
+    background-color: #333;
+    margin-bottom: 50px;
+}
+.leave-requests .requests 
+{
+    align-items: center;
+    text-align: center;
+    padding: 0 20%;
+}
+
+table {
+    text-align: center;
+    width:750px;
+    border-collapse: collapse;
+    margin: 50px;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
+}
+
+input[type="button"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .leave-requests {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+}

@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    /* background-color: #eee; */
+}
+
+/*  Nav bar  */
+nav {
+    background-color: #333;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+nav ul li a:hover {
+    color: #00ce9f;
+}
+/*  */
+
+
+/* Apply leave */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+}
+
+.container h1 {
+    margin: 20px;
+    margin-top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid gray;
+}
+
+.container form
+{
+    width: 80%;
+    background-color: #f2f2f2;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container form .form-items {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.container form input,
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #00ce9f;
+    font-size: 16px;
+    width: 300px;
+    outline: none;
+    height: 50px;
+}
+
+input[type=date] {
+    text-align: center;
+}
+
+input[type="submit"] {
+
+    border: 1px solid #00ce9f;
+    text-align: center;
+    color: #006400;
+    text-transform: uppercase;
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+
+    background-color: #00ce9f;
+    color: white;
+}
+
+
+
+
+/* for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    nav ul
+    {
+        gap: 30px;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    .container form
+    {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    textarea
+    {
+        height: 180px;
+    }
+
+
+}
+
+/* for mobile phones */
+@media only screen and (max-width: 767px) {
+    nav {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        border-bottom: 5px solid gray;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+    nav ul li a
+    {
+        padding: 5px;
+    }
+    h1 
+    {
+        text-align: center;
+    }
+
+    .container form
+    {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    textarea
+    {
+        height: 150px;
+    }
+
+
+}

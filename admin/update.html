@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="css/update.css">
+</head>
+
+<body>
+    <h1><b>Update User Information</b></h1>
+    <div>
+        <form action="">
+        <label for="id">iD</label>
+        <input type="number"  placeholder="Employee Id" id="id" name="id" required>
+        <label for="Select">Select field to update</label>
+        <select name="select" id="select">
+            <option value="">---Select field to update---</option>
+            <option value="id">id</option>
+            <option value="name">Name</option>
+            <option value="email">email</option>
+            <option value="dob">date of birth</option>
+            <option value="contact">Contact no</option>
+            <option value="department">department</option>
+            
+        </select>
+        <label  id="label"></label>
+        <input type="hidden" id="input">
+        <input type="submit" value="Update">
+        <br>
+        <span id="error" style="color:red"></span>
+    </form> 
+    </div>
+
+<script src="js/update.js"></script>
+</body>
+
+</html>

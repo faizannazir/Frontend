@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    height: 100%;
+    /* background-image: url("../bg-image.jpg");
+    background-repeat:  no-repeat ;
+    background-attachment:  fixed; */
+    background-color: #eee;
+    color: #006400;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    background-color: #ddd ;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+div, input[type="checkbox"] {
+    margin: 10px;
+}
+
+h1
+{
+    background-color: #333;
+    color: white;
+    border-bottom: 5px solid gray;
+    vertical-align:middle;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+}
+h3
+{
+    margin-top: 2px;
+}
+
+form {
+    margin-top: 0;
+    margin: 40px auto;
+    width: 500px;
+    background-color: #f2f2f2;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+    padding-left: 20px;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    outline-color: #00ce9f;
+}
+
+input[type="submit"],button
+{
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #00ce9f;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    color: #006400;
+    background-color: #eee;
+    text-transform: uppercase;
+    }
+    
+input[type="submit"]:hover ,button:hover
+    {
+        cursor: pointer;
+        background-color: #00ce9f;
+        color: white;
+    }
+
+ input.error
+ {
+    border: 2px solid red;
+    outline: 2px;
+    outline-color: red;
+ }
+
+@media (max-width: 500px) {
+
+    div
+    {
+        margin: 10px;
+    }
+
+    form {
+        width: 300px;
+        margin-bottom: 8px;
+        padding-bottom: 0;
+    }
+    img
+    {
+        width: 100px;
+    }
+    button,input[type="submit"]
+    {
+        width: 100px;
+        margin-bottom: 0;
+    }
+    h3
+    {
+       margin: 2px;
+    }
+    #forgot
+    {
+
+        width: fit-content;
+
+    }
+}

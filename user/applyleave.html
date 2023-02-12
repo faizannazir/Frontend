@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Apply Leave </title>
+    <link rel="stylesheet" href="css/leave.css">
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="viewattendance.html">View Attendance</a> </li>
+            <li><a href="#">Apply Leave</a> </li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Apply For Leave </h1>
+        <form action="" method="post">
+            <div class="form-items">
+               <label for="date"> Date: </label> <br>
+               <input type="date" name="date" id="date" required>
+            </div>
+            <br>
+            <div class="form-items">
+                <label for="reason">Reason:</label> <br>
+                <textarea name="reason" id="reason" cols="20" rows="5" placeholder="Enter your reason for leave"></textarea>
+            </div>
+            <br>
+            <div class="form-items">
+                <input type="submit" value="Apply">
+            </div>
+            <br>
+             <div id="error"></div> 
+        </form>
+      
+    </div>
+
+
+    <script src="js/leave.js"></script>
+</body>
+</html>
