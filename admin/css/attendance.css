@@ -4,10 +4,11 @@
 
 body {
     font-size: 20px;
-    background-color: #eee;
+    /* background-color: #eee; */
     color: #006400;
     padding: 0;
     margin: 0;
+    width: 100%;
     /* overflow-x: hidden; */
 }
 
@@ -21,7 +22,7 @@ body {
 }
 
 .filter-container h1 ,.container .attendance h1{
-    margin: 20px;
+    margin: 20px 0;
     width: 100%;
     background-color: #333;
     color: white;
@@ -30,11 +31,11 @@ body {
 
 .filter-container form
 {
-    width: 80%;
+    width: max-content;
     background-color: #f2f2f2;
     padding: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -85,7 +86,7 @@ label
 
 /* User Attendance  */
 .container {
-    background-color: #ddd;
+
     margin: 0;
     width: 100%;
     padding: 0;
@@ -112,7 +113,7 @@ label
     width: 90%;
     border-collapse: collapse;
     text-align: center;
-    background-color: #ddd;
+    /* background-color: #ddd; */
 }
 
 .container .attendance th,
@@ -122,7 +123,10 @@ td {
     text-transform: capitalize;
 }
 
-
+th {
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
 
 /* for tablets */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -134,12 +138,11 @@ td {
 
     h1 {
         text-align: center;
-        padding: 10px;
     }
     .container form
     {
         flex-direction: column;
-        gap: 0px;
+       
     }
 
     textarea
@@ -165,7 +168,6 @@ td {
 
     .container h1 {
         text-align: center;
-        padding: 20px;
     }
 
     th,
@@ -176,7 +178,7 @@ td {
     .filter-container form
     {
         flex-direction: column;
-        gap: 0px;
+        width: 90%;
     }
 
     textarea

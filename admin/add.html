@@ -18,8 +18,8 @@
         <input type="text" placeholder="Name" id="name" name="name" required> 
         <label for="email">Email</label>
         <input type="email" placeholder="Email address" id="email" name="email" required> 
-        <label for="name">contact no</label>
-        <input type="tel" placeholder="Contact number" required>
+        <label for="contact">contact no</label>
+        <input type="tel" placeholder="Contact number" id="contact" name="contact" required>
         <label for="dob">Date of birth</label>
         <input type="date"placeholder=" Enter Age" id="dob" name="dob"  required >
         <label for="id">ID</label>
@@ -33,16 +33,18 @@
         </select>
         <br>
         <label for="image">Image</label>
-        <input type="file" id="image" name="image" pattern="[\.png |\.jpg|\.jpeg|\.tiff]$" required>
+        <input type="file" id="image" name="image" pattern="[*(\.png |\.jpg|\.jpeg|\.tiff)]$" required>
         <label for="password">password</label>
         <input type="password" name="password" id="password" placeholder="Password" required>
         <label for="confirmpassword">confirm password</label>
         <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required>
-        <input type="submit" value="Submit">
+        <input type="submit" value="ADD">
+        <div id="error"></div>
+        <br>
     </form>     
     </div>
 
-
+<script src="js/add.js"></script>
 </body>
 
 </html>

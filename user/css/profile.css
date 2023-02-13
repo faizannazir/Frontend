@@ -108,7 +108,7 @@ th {
 
 }
 
-.container #logout input[type="submit"] {
+.container #logout button {
     text-decoration: none;
     margin: 30px;
     padding: 10px;
@@ -122,7 +122,7 @@ th {
     cursor: pointer;
 }
 
-.container #logout input[type="submit"]:hover {
+.container #logout button:hover {
     background-color: #00ce9f;
     color: white;
 }

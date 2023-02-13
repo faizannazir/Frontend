@@ -177,9 +177,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     dob.style.borderColor = "red";
                     return;
                 }
-                else if (!dob.value.match(/^(0[1-9]|1[012])[\/](0[1-9]|[12][0-9]|3[01])[\/](19[8-9][0-9]|200[0-1])$/)) {
+                else if (!dob.value.match(/^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/)) {
                     dob.style.borderColor = "red";
-                    error.innerHTML = "Please enter valid dob between (1980 - 2001)year";
+                    error.innerHTML = "Please enter valid dob ";
                     return;
                 }
                 else {
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 else if (!contact.value.match(/^[a-z A-z]+[a-z0-9._%+-]{1,}@[a-z0-9.-]{2,}\.[a-z]{2,}$/)) {
                     contact.style.borderColor = "red";
-                    error.innerHTML = "Please enter valid id";
+                    error.innerHTML = "Please enter valid contact no";
                     return;
                 }
                 else {
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
 
         }
-
+        error.innerHTML = "";
         form.submit();
 
     });

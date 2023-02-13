@@ -216,7 +216,7 @@ td {
         text-align: center;
     }
 
-    .user-info {
+    .user-info,.attendance {
         margin: 0;
         padding: 5px;
     }
