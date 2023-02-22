@@ -65,6 +65,7 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 .container form .form-items {
     text-align: center;

@@ -6,7 +6,6 @@
 
 body {
     font-size: 20px;
-    background-color: #eee;
 }
 
 /*  Nav bar  */
@@ -35,12 +34,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00ce9f;
-    color: white;
-    border: 2px solid #aeee;
+    color: #00ce9f;
 }
 /*  */
-
 
 /* Apply leave */
 .container {

@@ -38,10 +38,12 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 .filter-container form .form-items {
     text-align: center;
     padding: 5px 0;
+    margin: .2em;
 }
 
 .filter-container form input {
@@ -145,6 +147,10 @@ th {
        
     }
 
+    table
+    {
+        margin: 0;
+    }
     textarea
     {
         height: 180px;
@@ -184,6 +190,10 @@ th {
     textarea
     {
         height: 150px;
+    }
+    table
+    {
+        margin: 0;
     }
 }
 

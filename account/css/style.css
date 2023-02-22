@@ -51,7 +51,9 @@ form {
     font-weight: bold;
     padding: 20px;
     margin-bottom: 0;
+    border-radius: 8px;
 }
+
 
 input[type="text"],
 input[type="email"],
